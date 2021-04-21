@@ -19,7 +19,7 @@ import { connect } from 'react-redux';
 function App({curItem}) {
   return (
     <div className="App">
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Products} />
